@@ -1,3 +1,2 @@
 ciao veltrone come stai
-
-si
+Dalloooooooo
