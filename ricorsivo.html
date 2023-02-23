@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+        <label>INCOGNITA = 10,9,8,7,6,5,4,3,2,1</label><br>
+        <input type="button" oncleck="//function" value="risolvi">
+        
+    </body>
+    <head>
+        <script>
+            var v = [10,9,8,7,6,5,4,3,2,1];
+            let inizio = 0;
+            let fine = 9;
+            function posizioneMinimo(v, inizion, fine)
+            {
+	            let posMinimoRestante = posizioneMinimo(v, inizio + 1, fine)
+	            if(inizio === fine){
+		            return inizio;
+                }
+	                else{
+		                if (v[inizio] < v[posizioneMinimo(v, inizio + 1, fine)])
+			                return inizio;
+		                else{
+			                return posMinimoRestante;			
+                        }
+                    }
+            }
+            function selectionSort(v, inizion, fine){
+	            let posMinimo = 0;
+	            if (inizio === fine){
+		            return;
+                }
+	            else {
+		            posMinimo = posizioneMinimo(v, inizio, fine);
+		            swap(v, inizio, posMinimo); //scamba quello che c'è nella posizione inizio e quello che c'è nella posizione posMinimo dentro v
+		            selectionSort(v, inizio + 1, fine);
+	            }
+            }//da continuare
+        </script>
+    </head>
+</html>
