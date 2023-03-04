@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <script type="text/javascript" src="squearnumber.js"></script>
-    <label>valore n = 
-    <input type="number" min="1" max="1000" id="numbervalue">
-    <input type="butto" oneclick="">
+    <input type="number" min="1" max="1000" id="numbervalue"><br>
+    <input type="button" value="svolgi" onclick="number"><br>
+    <p id="Risultato"></p>
     </label>
+    <body>
+        <script>
+            function number(){
+                
+            let c = Number(document.getElementById("numbervalue").value);//valore
+            let lunghezza = c * 2 - 1;//lunghezza quadrato
+            let quadrato = new Array(lunghezza);//dimesioni
+            let g = " ";
+
+                for(let i = 0; i < lunghezza; i++){
+                    quadrato[i] = new Array(lunghezza);//inserimento in i la lunghezza
+
+                }
+                for(let i = 0; i < lunghezza; i++){
+                    for(let j = 0; j < lunghezza; j++){
+                        quadrato[i][j] = c;//da sistemare
+                    }
+
+                }
+                for(let a = 0; a < lunghezza; a++){
+                    for(let i = 0; i < lunghezza; i++){
+                        g = g + quadrato[i][j];
+                        if(i == g - 1){
+                            g = g +"<br>";//scrittura quadrato
+                        }
+
+                    }
+
+
+                }
+
+
+                document.getElementById("Risultato").innerHTML = g;
+            }
+
+        </script>
+
+    </body>
 
 
 </html>
