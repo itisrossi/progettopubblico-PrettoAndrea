@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <input type="number" min="1" max="1000" id="numbervalue"><br>
-    <input type="button" value="svolgi" onclick="number"><br>
+
+    <button onclick="number()"></button>
     <p id="Risultato"></p>
     </label>
     <body>
@@ -19,15 +20,26 @@
                 }
                 for(let i = 0; i < lunghezza; i++){
                     for(let j = 0; j < lunghezza; j++){
-                        quadrato[i][j] = c;//da sistemare
+                        quadrato[i][j] = c;
                     }
 
                 }
-                for(let a = 0; a < lunghezza; a++){
+                /*for(let a = 0; a < lunghezza; a++){
                     for(let i = 0; i < lunghezza; i++){
                         g = g + quadrato[i][j];
                         if(i == g - 1){
                             g = g +"<br>";//scrittura quadrato
+                        }
+
+                    }
+
+
+                }*/
+                for(let i = 0; i < lunghezza; i++){
+                    for(let j = 0; j < lunghezza; j++){
+                        g = g + quadrato[i][j];
+                        if(j == g - 1){
+                            g = g + "<br>";//scrittura quadrato
                         }
 
                     }
