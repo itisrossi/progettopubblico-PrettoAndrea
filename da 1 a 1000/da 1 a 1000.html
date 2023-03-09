@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <input type="text" id="dato">
+    <button onclick="frequenze()"></button><br>
+    <p id="Risultato1"></p>
+    <p id="Risultato2"></p>
+    <p id="Risultato3"></p>
+    <p id="Risultato4"></p>
+    <p id="Risultato5"></p>
+    <p id="Risultato6"></p>
+    <p id="Risultato7"></p>
+    <p id="Risultato8"></p>
+    <p id="Risultato9"></p>
+    <p id="Risultato10"></p>
+
+    <body>
+        <script>
+            function frequenze(){
+                let x = 0;
+                let number = String(document.getElementById("dato").value);
+                let position = 0;
+                let K = 0;//composizione valore output
+                let G = [];
+                for(h = 0; h < 10; h++){
+                    position[x] = 0;
+
+                    x++;
+
+                }
+                for(let i = 0; i < number.length; i++){
+                    G[i] = number.slice(i - 1, i);
+                    x = 0;
+                        switch (G[i]) {
+                            case 0:
+                                    position[x] = position[x] + 1;
+                                break;
+                            case 1:
+                                    x = 1;
+                                    position[x] = position[x] + 1
+                                break;
+                            case 2:
+                                x = 2;
+                                    position[x] = position[x] + 1;
+                                break;
+                            case 3:
+                                    x = 3;
+                                    position[x] = position[x] + 1
+                                break;
+                            case 4:
+                                x = 4;
+                                    position[x] = position[x] + 1;
+                                break;
+                            case 5:
+                                    x = 5;
+                                    position[x] = position[x] + 1
+                                break;
+                            case 6:
+                                x = 6;
+                                    position[x] = position[x] + 1;
+                                break;
+                            case 7:
+                                    x = 7;
+                                    position[x] = position[x] + 1
+                                break;
+                            case 8:
+                                x = 8;
+                                    position[x] = position[x] + 1;
+                                break;
+                            case 9:
+                                    x = 9;
+                                    position[x] = position[x] + 1
+                                break;
+
+                        }
+                        /* da controllare
+                        x = 10;
+                        position[x] = position[0] + " " + position[1] + " " + position[2] + " " + position[3] + " " + position[4] + " " + position[5] + " " + position[6] + " " + position[7] + " " + position[8] + " " + position[9];
+                    
+                
+                x = 10;
+                document.getElementById("Risultato1").innerHTML = position[x];*/
+                    }
+              /* da controllare
+               x = 0;
+                document.getElementById("Risultato1").innerHTML = position[x];
+                x = 1;
+                document.getElementById("Risultato2").innerHTML = position[x];
+                x = 2;
+                document.getElementById("Risultato3").innerHTML = position[x];
+                x = 3;
+                document.getElementById("Risultato4").innerHTML = position[x];
+                x = 4;
+                document.getElementById("Risultato5").innerHTML = position[x];
+                x = 5;
+                document.getElementById("Risultato6").innerHTML = position[x];
+                x = 6;
+                document.getElementById("Risultato7").innerHTML = position[x];
+                x = 7;
+                document.getElementById("Risultato8").innerHTML = position[x];
+                x = 8;
+                document.getElementById("Risultato9").innerHTML = position[x];
+                x = 9;
+                document.getElementById("Risultato10").innerHTML = position[x];
+                */
+            }
+            
+        </script>
+
+    </body>
+</html>
